@@ -29,7 +29,7 @@
             background: var(--tg-theme-button-color);
             color: var(--tg-theme-button-text-color);
             width: 1%;
-            text-align: center;
+            text-align: right;
         }
 
         table#skill-table > tbody > tr.header > td.title {
@@ -49,6 +49,7 @@
         table#skill-table > tbody > tr.header > td.lang-button.selected {
             border: 1px solid var(--tg-theme-button-text-color);
         }
+
         table#skill-table > tbody > tr.header > td.undefined {
             background: var(--tg-theme-secondary-bg-color);
             color: var(--tg-theme-hint-color);
@@ -96,7 +97,7 @@
 
         const _lang_selection = {}
 
-        function _set_description(code, elem) {
+        function _set_description(code, title, descr) {
             if (_lang_selection[code] === undefined) {
                 _lang_selection[code] = "en";
             }
@@ -104,6 +105,8 @@
             if (skills[code][_lang_selection[code]] === undefined) {
                 _lang_selection[code] = "en";
             }
+
+            title.innerText = skills[code][_lang_selection[code]].name;
             let d = document.createElement("p");
             d.classList.add("description");
             d.innerText = skills[code][_lang_selection[code]].description;
@@ -112,11 +115,11 @@
             e.classList.add("explanation");
             e.innerText = skills[code][_lang_selection[code]].explanation;
 
-            elem.replaceChildren(d, L, e);
+            descr.replaceChildren(d, L, e);
         }
 
         function expand(code, elem) {
-            _set_description(code, elem.parentElement.nextElementSibling.firstElementChild);
+            _set_description(code, elem.parentElement.children[1], elem.parentElement.nextElementSibling.firstElementChild);
 
             elem.onclick = () => {
                 collapse(code, elem)
@@ -137,7 +140,7 @@
             elem.parentElement.children[4].classList.remove("selected")
             elem.classList.add("selected")
             _lang_selection[code] = lang;
-            _set_description(code, elem.parentElement.nextElementSibling.firstElementChild);
+            _set_description(code, elem.parentElement.children[1], elem.parentElement.nextElementSibling.firstElementChild);
         }
     </script>
     <script>
@@ -154,7 +157,408 @@
                     "Мир прекрасен. 9 замков, деревья, долины и горный хребет - виды бесконечны! Местный гид собрал список достопримечательностей, который, если следовать ему, может вдохновить вас на дальнейшие прогулки!",
                     "Развитие навыка повышает вероятность регенерации выносливости и маны в дальнейшем по цепочке."
                 )
-            )
+            ),
+            new multi_lang_skill(
+                "toh",
+                new skill(
+                    "Thrill of the Hunt",
+                    "Battle excites you. Seeing foes fall one by one, divine. Against fellow man though, has become boring… so take your anger out on the forest inhabitants!",
+                    "Advancing this skill gives you the chance to regenerate stamina on a successful mob encounter"
+                ),
+                new skill(
+                    "Охотничий азарт",
+                    "Битва будоражит вас. Видеть, как враги падают один за другим, божественно. Однако сражаться с себе подобными стало скучно... так выместите свой гнев на обитателях леса!",
+                    "Развитие навыка дает вам возможность восстанавливать выносливость при успешном столкновении с мобами."
+                )
+            ),
+
+            new multi_lang_skill(
+                "ggp",
+                new skill(
+                    "Gastronomic Grasp",
+                    "Your studies of cooking help you to spot and collect useful and precious food ingredients, whilst returning from really nice and sunny quests.",
+                    "Advancing this skill increases chance and amount of food ingredients found in quests."
+                ),
+                new skill(
+                    "Гастрономическая хватка",
+                    "Изучение кулинарии поможет вам находить и собирать полезные и ценные ингредиенты еды, возвращаясь при этом с очень приятных и солнечных приключений.",
+                    "Развитие этого навыка увеличивает шанс и количество пищевых ингредиентов, найденных в квестах."
+                )
+            ),
+
+            new multi_lang_skill(
+                "lb",
+                new skill(
+                    "Labeling",
+                    "Ability to organise stock logistics and arrange items appropriately allows you to save storage space.",
+                    "Advancing this skill increases the size of your stock."
+                ),
+                new skill(
+                    "Маркировка",
+                    "Редкая в наши дни способность своевременно раскладывать всё по местам позволяет вам экономить место для дополнительных запасов.",
+                    "Развитие этого навыка увеличивает вместительность вашего хранилища."
+                )
+            ),
+
+            new multi_lang_skill(
+                "rce",
+                new skill(
+                    "Chef's Insight",
+                    "Cooking different dishes from seemingly the same ingredients allows you to be creative, which leads to discoveries and insights",
+                    "Cooking now has the chance to award bonus EXP when cooking"
+                ),
+                new skill(
+                    "Интуиция шеф-повара",
+                    "Приготовление разных блюд из казалось бы одинаковых ингридиентов позволяет проявлять творческий подход, что приводит к открытиям и озарениям.",
+                    "Кулинария теперь может приносить дополнительный опыт при приготовлении новой пищи"
+                )
+            ),
+
+            new multi_lang_skill(
+                "rad",
+                new skill(
+                    "Heartless Delirium",
+                    "Wandering the forest while heavily injured let’s you see a lot of stuff, real or not. Before battle, you can unleash these unperceived horrors while you fight, turning your anger to fear as it’s a literal fight to the death.",
+                    "While questing at low health, you collect flashback charges. Before a battle, release your bottled up fears and relieve your mind of them. To release /use_rad"
+                ),
+                new skill(
+                    "Бессердечный бред",
+                    "Блуждая по лесу с тяжелыми ранениями, вы можете увидеть много всего, реального или нет. Перед битвой вы можете высвободить эти невидимые ужасы во время боя, превратив свой гнев в страх, ведь это буквально смертельная схватка.",
+                    "Во время приключений при низком уровне здоровья вы собираете заряды воспоминаний. Перед битвой выпустите свои страхи из бутылок и освободите от них свой разум. Отпустить /use_rad"
+                )
+            ),
+
+            new multi_lang_skill(
+                "rtr",
+                new skill(
+                    "Experienced Tracker",
+                    "Having fought so many mobs, you’ve learned to track them… and the same for them. Once a day, you can make a stand and fight the mob army, for glory and loot!",
+                    "Advancing this skills enables a once a day mob event - a window of guaranteed mobs after successful questing. Further advancements extends the time frame. To start tracking /use_rtr"
+                ),
+                new skill(
+                    "Опытный следопыт",
+                    "Сражаясь со многими мобами, вы научились выслеживать их... и их самих. Раз в день вы можете выступить и сразиться с армией мобов ради славы и добычи!",
+                    "Развитие этого навыка позволяет раз в день получать схватку - окно гарантированных мобов после успешного приключения. Дальнейшее развитие навыка увеличивает временные рамки. Чтобы начать отслеживание /use_rtr"
+                )
+            ),
+
+            new multi_lang_skill(
+                "mas",
+                new skill(
+                    "Magic Skin",
+                    "On the inside, you knew you were a fighter at heart. Channeling your inner powers, you found a more useful way to use it: to fuel your determination, and push through the upcoming fight.",
+                    "Increasing this skill grants the ability to use mana for HP, absorbing some damage. Further levels of training increase the effectiveness. The skill provides a bit of flat mana bonus and tiny global mana multiplier."
+                ),
+                new skill(
+                    "Магическая кожа",
+                    "Внутри вы знали, что в душе вы боец. Направляя свои внутренние силы в нужное русло, вы находили им более полезное применение: подпитывать свою решимость и пробиваться через предстоящий бой.",
+                    "Увеличение этого навыка дает возможность использовать ману для HP, поглощая часть урона. Дальнейшие уровни обучения повышают эффективность. Умение дает небольшой плоский бонус к мане и крошечный глобальный множитель маны."
+                )
+            ),
+
+            new multi_lang_skill(
+                "ckn",
+                new skill(
+                    "Cooking",
+                    "Sick of the castle’s food, you fled to the land in search of some yum yum. A little pine needle, some beef, and honey go a far way, but leave some effects on the stomach…",
+                    "Advancing this skill opens the door for new recipes and advancement in abilities. Use /use_ckn to start cooking."
+                ),
+                new skill(
+                    "Готовка",
+                    "Вам надоела еда в замке, и вы сбежали на землю в поисках вкусняшек. Немного хвои, немного говядины и меда - это далеко не все, но оставляет некоторые последствия для желудка...",
+                    "Развитие навыка открывает двери для новых рецептов и улучшения способностей. Используйте /use_ckn, чтобы начать готовить."
+                )
+            ),
+
+            new multi_lang_skill(
+                "cll",
+                new skill(
+                    "Collection",
+                    "Trained eyes and natural senses help you to find more spoils upon exploration of the forests and wild territories.",
+                    "Advancing this skill increases the amount of resources found."
+                ),
+                new skill(
+                    "Добыча",
+                    "Намётанный глаз и природное чутьё помогают вам находить больше добычи при при исследовании лесов, долин и болот.",
+                    "Развитие этого навыка увеличивает количество найденых ресурсов"
+                )
+            ),
+
+            new multi_lang_skill(
+                "se",
+                new skill(
+                    "Smart Explorer",
+                    "Mysterious objects hide many secrets. You always learn something new, when you find them.",
+                    "Advancing this skill increases the daily limit for bonus experience you gain from finding extra items."
+                ),
+                new skill(
+                    "Толковый исследователь",
+                    "Загадочные редкие предметы скрывают множество секретов. Вам всегда удаётся изучить что-то новое, когда вы их находите.",
+                    "Развитие этого навыка увеличивает дневной лимит опыта, получаемого при нахождении предметов."
+                )
+            ),
+
+            new multi_lang_skill(
+                "shf",
+                new skill(
+                    "Shared food",
+                    "You know that clashes are often more grueling than you'd like them to be. To avoid getting too tired and to support those who have shared the battle with you, you are willing to share a meal with your brothers in arms. In other words, food in need is food indeed.",
+                    "Developing the skill increases the duration of the effect and the chance of triggering. To use the skill, eat a variety of food and don't avoid the encounters after hiking in the woods."
+                ),
+                new skill(
+                    "Общая еда",
+                    "Вы знаете, что стычки часто бывают более изнурительными, чем вам хотелось бы. Чтобы не сильно устать и поддержать тех, кто разделил с вами битву, вы готовы разделить трапезу с братьями по оружию. Иными словами, еда познаётся в беде.",
+                    "Развитие навыка увелчивает длительность эффекта и шанс срабатывания. Чтобы применить умение питайтесь разнообразно и не избегайте кофликтов после походов в лес."
+                )
+            ),
+
+            new multi_lang_skill(
+                "cex",
+                new skill(
+                    "Culinary experiment",
+                    "Cook with heart. You have some serious experience, and now you can improvise even more. By looking at the taste map from different perspectives, you see possibilities for original and, importantly, edible results.",
+                    ""
+                ),
+                new skill(
+                    "Кулинарный эксперимент",
+                    "Готовьте с душой. У вас есть серьезный опыт, и теперь вы можете импровизировать еще больше. Рассматривая карту вкуса с разных точек зрения, вы видите возможности для достижения оригинальных и, что немаловажно, съедобных результатов.",
+                    ""
+                )
+            ),
+
+            new multi_lang_skill(
+                "cft",
+                new skill(
+                    "Crafting",
+                    "Being an expert in your craftsmanship gives you an ability to craft complex items.",
+                    "Advancing this skill allows you to craft more complicated items."
+                ),
+                new skill(
+                    "Ремесло",
+                    "Будучи искусным ремеслеником, вы можете творить такие предметы, что другим не под силу.",
+                    "Развитие этого навыка позволяет вам создавать более сложные предметы."
+                )
+            ),
+
+            new multi_lang_skill(
+                "et",
+                new skill(
+                    "Educated Technician",
+                    "Like a true master you are, every time you craft an item, you learn something new.",
+                    "Advancing this skill increases the daily limit for bonus experience you gain from crafting."
+                ),
+                new skill(
+                    "Образованный инженер",
+                    "Как истинный мастер своего дела, при создании предметов вы каждый раз видите в них что-то новое и особенное.",
+                    "Развитие этого навыка увеличивает дневной лимит опыта, получаемого при крафте"
+                )
+            ),
+
+            new multi_lang_skill(
+                "wng",
+                new skill(
+                    "Wingman",
+                    "In the forest lives a Mercenary Camp. Within the confines of the camp, many rough and tough people reside. With a big enough coin bag, influence, or favors, people can be recruited to your cause.",
+                    "Advancing this skill will increase base stats, amount of mercenaries and pieces of equipment one can afford. To have a small talk with them /use_wng"
+                ),
+                new skill(
+                    "Ведомый",
+                    "В лесу есть Лагерь наемников. В пределах лагеря живет много грубых и жестких людей. При наличии достаточно большого мешка монет, влияния или услуг, людей можно привлечь на свою сторону.",
+                    "Развитие навыка увеличивает характеристики, количество наемников и предметов снаряжения, которые можно себе позволить."
+                )
+            ),
+
+            new multi_lang_skill(
+                "eve",
+                new skill(
+                    "Everlasting Endurance",
+                    "Having been hit over the head so many times, you’ve learned a way to recollect yourself faster than normal. It’s tiring though, and can not be done too often.",
+                    "So, when your HP hits fall to zero, you’ll get a little boost. Leveling up further increases the percentage of return."
+                ),
+                new skill(
+                    "Бесконечная выносливость",
+                    "После того как вас столько раз били по голове, вы научились приходить в себя быстрее, чем обычно. Однако это утомительно, и это нельзя делать слишком часто.",
+                    "Таким образом, когда ваше здоровье упадет до нуля, вы получите небольшую прибавку. Повышение уровня еще больше увеличивает процент отдачи."
+                )
+            ),
+
+            new multi_lang_skill(
+                "dwm",
+                new skill(
+                    "Double Trouble",
+                    "After accidentally picking up two swords, Thomas Two Swords invented the idea of duel wielding. However, he tended to lose the other one quite often when facing failure...",
+                    "Advancing this skill unlocks the ability to wield two main weapons, and do more damage with the second weapon."
+                ),
+                new skill(
+                    "Мастер на все руки",
+                    "Случайно подобрав два меча, Томас Два Меча придумал идею дуэльного владения. Однако, он обычно теряет один, столкнувшись с неудачей...",
+                    "Развитие этого навыка открывает возможность владения двумя основными видами оружия и нанесения большего урона вторым оружием."
+                )
+            ),
+
+            new multi_lang_skill(
+                "br",
+                new skill(
+                    "Broker",
+                    "As an experienced trader, you are able to look after numerous exchange deals at a time.",
+                    "Advancing this skill increases maximum number of stock exchange deals."
+                ),
+                new skill(
+                    "Брокер",
+                    "Как опытный трейдер, вы можете одновременно следить за большим количеством событий на бирже ресурсов.",
+                    "Развитие этого навыка увеличивает максимальное количество слотов на бирже."
+                )
+            ),
+
+            new multi_lang_skill(
+                "pob",
+                new skill(
+                    "Porcelain Boy",
+                    "Ow ow ow! Being a mama’s boy is hard… every day you get a little scrape or bump for show, but on the inside you know it doesn’t hurt; it’s all for show, deceiving those around you.",
+                    "Advancing this skills increases what’s considered “low HP,” advancement raises the percentage range, and access to some rare but very personal flashbacks."
+                ),
+                new skill(
+                    "Фарфоровый мальчик",
+                    "Ой-ой-ой! Быть маменькиным сынком тяжело... каждый день у тебя появляется маленькая царапинка или шишка, но внутри ты знаешь, что это не больно, это все напоказ, чтобы обмануть окружающих.",
+                    "Развитие этого навыка увеличивает то, что считается \"низким HP\", улучшение повышает процентный диапазон, а также открывает доступ к редким, но очень личным воспоминаниям."
+                )
+            ),
+
+            new multi_lang_skill(
+                "ew",
+                new skill(
+                    "Enlightened Warrior",
+                    "Being a naturally born warrior, you learn from your victories and losses, coming out wiser from every battle.",
+                    "Advancing this skill increases the daily limit for bonus experience you gain from the battle."
+                ),
+                new skill(
+                    "Просветленный воин",
+                    "Вы прирождённый воин, все ваши победы и поражения служат цели достижения воинской мудрости.",
+                    "Развитие этого навыка увеличивает дневной лимит для опыта, получаемого в битвах"
+                )
+            ),
+
+            new multi_lang_skill(
+                "cty",
+                new skill(
+                    "Curiousity",
+                    "During the battle you scatter through the battlefield, looking for a shiny coin.",
+                    "Advancing this skill increases the gold you obtain on the battlefield."
+                ),
+                new skill(
+                    "Любопытство",
+                    "Во время сражения вы перемещаетесь по полю боя в поисках блестящей монетки.",
+                    "Развитие навыка увеличивает количество золота, которое вы получаете на поле боя."
+                )
+            ),
+
+            new multi_lang_skill(
+                "wm",
+                new skill(
+                    "Weapon Mastery",
+                    "Experience and training grant you bonus stats while bearing any weapon.",
+                    "Advancing this skill increases bonus granted to stats."
+                ),
+                new skill(
+                    "Владение оружием",
+                    "Тренировки и опыт делают своё дело, ваши способности повышаются, пока у вас в руках любое оружие.",
+                    "Развитие навыка увеличивает ваши характеристики."
+                )
+            ),
+
+            new multi_lang_skill(
+                "am",
+                new skill(
+                    "Armor Mastery",
+                    "Experience and training grant you bonus stats while wearing any armor.",
+                    "Advancing this skill increases bonus granted to stats."
+                ),
+                new skill(
+                    "Владение броней",
+                    "Тренировки и опыт делают своё дело, ваши способности повышаются, когда вы носите любую броню.",
+                    "Развитие навыка увеличивает ваши характеристики."
+                )
+            ),
+
+            new multi_lang_skill(
+                "brr",
+                new skill(
+                    "Barn Robber",
+                    "You pay more attention to the resources, rather than gold, so you focus on robbing barns, not banks.",
+                    "Advancing this skill increases number of stock you obtain on the battlefield."
+                ),
+                new skill(
+                    "Расхититель амбаров",
+                    "Вы больше внимания уделяете ресурсам, а не золоту, поэтому вы сосредоточены на ограблении амбаров, а не банков.",
+                    "Развитие этого навыка увеличивает количество получаемых вами на поле боя припасов."
+                )
+            ),
+            new multi_lang_skill(
+                "hmr",
+                new skill(
+                    "Hamster",
+                    "Your inner hamster shows you the new ways to hide your stock.",
+                    "Advancing this skill decreases the amount of stock you lose upon your castle being breached."
+                ),
+                new skill(
+                    "Хомяк",
+                    "Ваш внутренний хомяк показывает вам новые способы спрятать свои запасы.",
+                    "Развитие навыка уменьшает количество запасов, которые вы теряете при проникновении в ваш замок."
+                )
+            ),
+            new multi_lang_skill(
+                "dl",
+                new skill(
+                    "Prudent Duelist",
+                    "Being an excellent duelist, you learn more from your victories at the arena.",
+                    "Advancing this skill increases the daily limit for bonus experience you gain from the arena."
+                ),
+                new skill(
+                    "Осторожный дуэлянт",
+                    "Вы — талантливый дуэлянт! Это помогает обучаться эффективнее, сражаясь на арене.",
+                    "Развитие этого навыка увеличивает дневной лимит для опыта, получаемого на арене."
+                )
+            ),
+            new multi_lang_skill(
+                "rdr",
+                new skill(
+                    "Raider",
+                    "Being a fierce warrior you loot every single coin you can find during your attacks.",
+                    "Advancing this skill increases the gold you obtain on the battlefield in a successful attack."
+                ),
+                new skill(
+                    "Налетчик",
+                    "Будучи свирепым воином, вы собираете все монеты, которые можете найти во время своих атак.",
+                    "Развитие навыка увеличивает количество золота, которое вы получаете на поле боя при успешной атаке."
+                )
+            ),
+            new multi_lang_skill(
+                "tgp",
+                new skill(
+                    "Tight Grip",
+                    "Your firm grip prevents you from losing your equipment and help to disarm enemies on the battlefield.",
+                    "Advancing this skill increases the chance to disarm enemy and parry opponents attempt to do the same against you on the battlefield."
+                ),
+                new skill(
+                    "Крепкая Хватка",
+                    "Крепкий хват предотвращает потерю снаряжения и помогает обезоружить врагов на поле боя.",
+                    "Развитие этого навыка увеличивает шанс обезоружить врага и парировать попытки противников сделать то же самое против вас на поле боя."
+                )
+            ),
+            new multi_lang_skill(
+                "lrh",
+                new skill(
+                    "Lefty right-handed",
+                    "This type of specialization essentially improves everything about off-hand tools and weapons in every possible way.",
+                    ""
+                ),
+                new skill(
+                    "Левша-правша",
+                    "Этот тип специализации, по сути, улучшает все, что связано со вторичными инструментами и оружием, всеми возможными способами",
+                    ""
+                )
+            ),
+
         ]
 
         const skills = {}
@@ -173,7 +577,7 @@
         for (let s of _skills) {
             document.write(
                 "<tr class='header'>" +
-                "    <td class='expand-button' onclick='expand(\"" + s.code + "\", this)'>&gt;&gt;</td>" +
+                "    <td class='expand-button' onclick='expand(\"" + s.code + "\", this)'>" + s.code + "</td>" +
                 "    <td class='title'>" + s.en.name + "</td>" +
                 "    <td class='lang-button selected' onclick='translate_skill(\"" + s.code + "\", \"en\", this)'>en</td>" +
                 "    <td class='lang-button" + (s.ru === undefined ? " undefined" : "") + "' " + (s.ru === undefined ? "" : "onclick='translate_skill(\"" + s.code + "\", \"ru\", this)'") + ">ru</td>" +
