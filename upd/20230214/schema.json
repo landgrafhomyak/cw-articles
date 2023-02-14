@@ -1,0 +1,50 @@
+{
+  "definitions": {
+    "skill": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "explanation": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "string"
+      },
+      "en": {
+        "$ref": "#/definitions/skill"
+      },
+      "ru": {
+        "oneOf": [
+          {
+            "type": "null"
+          },
+          {
+            "$ref": "#/definitions/skill"
+          }
+        ]
+      },
+      "es": {
+        "oneOf": [
+          {
+            "type": "null"
+          },
+          {
+            "$ref": "#/definitions/skill"
+          }
+        ]
+      }
+    }
+  }
+}
