@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        if (document.documentElement.style.getPropertyValue("--tg-theme-secondary-bg-color") === undefined)
+            document.documentElement.style.setProperty("--tg-theme-secondary-bg-color", document.documentElement.style.getPropertyValue("--tg-theme-bg-color"))
+    </script>
+    <style>
+        html, body {
+            background-color: var(--tg-theme-bg-color);
+            color: var(--tg-theme-text-color);
+            font-family: sans-serif;
+        }
+
+        table#skill-table {
+            width: 100%;
+            border-collapse: separate;
+        }
+
+        table#skill-table > tbody > tr > td {
+            border-radius: 0.2em;
+            padding: 0.2em;
+        }
+
+        table#skill-table > tbody > tr.header > td.expand-button {
+            background: var(--tg-theme-button-color);
+            color: var(--tg-theme-button-text-color);
+            width: 1%;
+            text-align: center;
+        }
+
+        table#skill-table > tbody > tr.header > td.title {
+            color: var(--tg-theme-text-color);
+            width: available;
+            border: 1px solid var(--tg-theme-text-color);
+            font-weight: bold;
+        }
+
+        table#skill-table > tbody > tr.header > td.lang-button {
+            background: var(--tg-theme-button-color);
+            color: var(--tg-theme-button-text-color);
+            width: 1%;
+            text-align: center;
+        }
+
+        table#skill-table > tbody > tr.header > td.lang-button.selected {
+            border: 1px solid var(--tg-theme-button-text-color);
+        }
+        table#skill-table > tbody > tr.header > td.undefined {
+            background: var(--tg-theme-secondary-bg-color);
+            color: var(--tg-theme-hint-color);
+        }
+
+        table#skill-table > tbody > tr.description > td {
+            background-color: var(--tg-theme-secondary-bg-color);
+            color: var(--tg-theme-hint-color);
+            border: 1px solid var(--tg-theme-hint-color);
+        }
+
+        table#skill-table > tbody > tr.description.collapsed > td {
+            display: none;
+        }
+
+        table#skill-table > tbody > tr.description > td > p {
+            margin: 0;
+        }
+
+        table#skill-table > tbody > tr.description > td > p.description {
+        }
+
+        table#skill-table > tbody > tr.description > td > p.explanation {
+            font-style: italic;
+        }
+
+    </style>
+    <script>
+        class skill {
+            constructor(name, description, explanation) {
+                this.name = name;
+                this.description = description;
+                this.explanation = explanation;
+            }
+        }
+
+        class multi_lang_skill {
+            constructor(code, en, ru = undefined, es = undefined) {
+                this.code = code;
+                this.en = en;
+                this.ru = ru
+                this.es = es
+            }
+        }
+
+        const _lang_selection = {}
+
+        function _set_description(code, elem) {
+            if (_lang_selection[code] === undefined) {
+                _lang_selection[code] = "en";
+            }
+
+            if (skills[code][_lang_selection[code]] === undefined) {
+                _lang_selection[code] = "en";
+            }
+            let d = document.createElement("p");
+            d.classList.add("description");
+            d.innerText = skills[code][_lang_selection[code]].description;
+            let L = document.createElement("br")
+            let e = document.createElement("p");
+            e.classList.add("explanation");
+            e.innerText = skills[code][_lang_selection[code]].explanation;
+
+            elem.replaceChildren(d, L, e);
+        }
+
+        function expand(code, elem) {
+            _set_description(code, elem.parentElement.nextElementSibling.firstElementChild);
+
+            elem.onclick = () => {
+                collapse(code, elem)
+            }
+            elem.parentElement.nextElementSibling.classList.remove("collapsed")
+        }
+
+        function collapse(code, elem) {
+            elem.onclick = () => {
+                expand(code, elem)
+            }
+            elem.parentElement.nextElementSibling.classList.add("collapsed")
+        }
+
+        function translate_skill(code, lang, elem) {
+            elem.parentElement.children[2].classList.remove("selected")
+            elem.parentElement.children[3].classList.remove("selected")
+            elem.parentElement.children[4].classList.remove("selected")
+            elem.classList.add("selected")
+            _lang_selection[code] = lang;
+            _set_description(code, elem.parentElement.nextElementSibling.firstElementChild);
+        }
+    </script>
+    <script>
+        const _skills = [
+            new multi_lang_skill(
+                "wow",
+                new skill(
+                    "World View",
+                    "The world’s a beautiful place. 9 castles, trees and valleys and a mountain range, the views are endless! A local guide has assembled a list of sights, that when followed, may inspire you to keep walking!",
+                    "Advancing this skill raises the probability of regenerating stamina and mana later on the chain."
+                ),
+                new skill(
+                    "Мировоззрение",
+                    "Мир прекрасен. 9 замков, деревья, долины и горный хребет - виды бесконечны! Местный гид собрал список достопримечательностей, который, если следовать ему, может вдохновить вас на дальнейшие прогулки!",
+                    "Развитие навыка повышает вероятность регенерации выносливости и маны в дальнейшем по цепочке."
+                )
+            )
+        ]
+
+        const skills = {}
+        for (let s of _skills) {
+            skills[s.code] = s
+        }
+    </script>
+</head>
+<body>
+<table id="skill-table">
+    <thead>
+
+    </thead>
+    <tbody>
+    <script>
+        for (let s of _skills) {
+            document.write(
+                "<tr class='header'>" +
+                "    <td class='expand-button' onclick='expand(\"" + s.code + "\", this)'>&gt;&gt;</td>" +
+                "    <td class='title'>" + s.en.name + "</td>" +
+                "    <td class='lang-button selected' onclick='translate_skill(\"" + s.code + "\", \"en\", this)'>en</td>" +
+                "    <td class='lang-button" + (s.ru === undefined ? " undefined" : "") + "' " + (s.ru === undefined ? "" : "onclick='translate_skill(\"" + s.code + "\", \"ru\", this)'") + ">ru</td>" +
+                "    <td class='lang-button" + (s.es === undefined ? " undefined" : "") + "' " + (s.es === undefined ? "" : "onclick='translate_skill(\"" + s.code + "\", \"es\", this)'") + ">es</td>" +
+                "</tr>" +
+                "<tr class='description collapsed'>" +
+                "    <td colspan='5'></td>" +
+                "</tr>"
+            )
+        }
+    </script>
+    </tbody>
+</table>
+</body>
+</html>

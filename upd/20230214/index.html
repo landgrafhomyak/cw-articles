@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            background-color: #eee;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        iframe#tg_webapp {
+            margin-left: 20%;
+            margin-right: 20%;
+            border: none;
+            padding: 0;
+            width: 60%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<iframe src="./tg_webapp.html" id="tg_webapp">
+</iframe>
+
+<script>
+    let frame = document.getElementById("tg_webapp");
+    frame.onload = () => {
+        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-bg-color", "#eee")
+        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-text-color", "#000000")
+        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-button-color", "#aef")
+        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-button-text-color", "#00a")
+        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-secondary-bg-color", "#ddd")
+        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-hint-color", "#444")
+    }
+</script>
+
+</body>
+</html>
