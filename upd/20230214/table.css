@@ -19,6 +19,8 @@ table#skills-table > tbody > tr.header > td.code {
     background: #ddd;
     width: 1%;
     text-align: right;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 table#skills-table > tbody > tr.header > td.name {
