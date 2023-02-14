@@ -1,0 +1,70 @@
+html, body {
+    background-color: #eee;
+    color: #000;
+    font-family: sans-serif;
+}
+
+table#skills-table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+table#skills-table > tbody > tr > td {
+    border-radius: 0.2em;
+    padding: 0.2em;
+    border: 1px solid #222;
+}
+
+table#skills-table > tbody > tr.header > td.code {
+    background: #ddd;
+    width: 1%;
+    text-align: right;
+}
+
+table#skills-table > tbody > tr.header > td.name {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+table#skills-table > tbody > tr.header > td.lang-button {
+    background-color: #aff;
+    color: #005;
+    border-color: #005;
+    width: 1%;
+    text-align: center;
+}
+
+table#skills-table > tbody > tr.header > td.lang-button.selected {
+    background-color: #fd0;
+    color: #a00;
+    border-color: #a00;
+}
+
+table#skills-table > tbody > tr.header > td.undefined {
+    background-color: #ccc;
+    color: #aaa;
+}
+
+table#skills-table > tbody > tr.body > td {
+    color: #333;
+}
+
+table#skills-table > tbody > tr.body.collapsed > td {
+    display: none;
+}
+
+table#skills-table > tbody > tr.body > td > div.unselected {
+    display: none;
+}
+
+table#skills-table > tbody > tr.body > td > div > p {
+    margin: 0;
+}
+
+table#skills-table > tbody > tr.body > td > div > p.description {
+}
+
+table#skills-table > tbody > tr.body > td > div > p.explanation {
+    font-style: italic;
+    color: #040;
+}

@@ -28,18 +28,5 @@
 <body>
 <iframe src="./tg_webapp.html" id="tg_webapp">
 </iframe>
-
-<script>
-    let frame = document.getElementById("tg_webapp");
-    frame.onload = () => {
-        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-bg-color", "#eee")
-        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-text-color", "#000000")
-        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-button-color", "#aef")
-        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-button-text-color", "#00a")
-        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-secondary-bg-color", "#ddd")
-        frame.contentWindow.document.documentElement.style.setProperty("--tg-theme-hint-color", "#444")
-    }
-</script>
-
 </body>
 </html>
