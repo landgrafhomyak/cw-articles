@@ -1,0 +1,1121 @@
+[
+  {
+    "code": "wow",
+    "en": {
+      "name": "World View",
+      "description": "The world’s a beautiful place. 9 castles, trees and valleys and a mountain range, the views are endless! A local guide has assembled a list of sights, that when followed, may inspire you to keep walking!",
+      "explanation": "Advancing this skill raises the probability of regenerating stamina and mana later on the chain."
+    },
+    "ru": {
+      "name": "Мировоззрение",
+      "description": "Мир прекрасен. 9 замков, деревья, долины и горный хребет - виды бесконечны! Местный гид собрал список достопримечательностей, который, если следовать ему, может вдохновить вас на дальнейшие прогулки!",
+      "explanation": "Развитие навыка повышает вероятность регенерации выносливости и маны в дальнейшем по цепочке."
+    },
+    "es": null
+  },
+  {
+    "code": "toh",
+    "en": {
+      "name": "Thrill of the Hunt",
+      "description": "Battle excites you. Seeing foes fall one by one, divine. Against fellow man though, has become boring… so take your anger out on the forest inhabitants!",
+      "explanation": "Advancing this skill gives you the chance to regenerate stamina on a successful mob encounter"
+    },
+    "ru": {
+      "name": "Охотничий азарт",
+      "description": "Битва будоражит вас. Видеть, как враги падают один за другим, божественно. Однако сражаться с себе подобными стало скучно... так выместите свой гнев на обитателях леса!",
+      "explanation": "Развитие навыка дает вам возможность восстанавливать выносливость при успешном столкновении с мобами."
+    },
+    "es": null
+  },
+  {
+    "code": "ggp",
+    "en": {
+      "name": "Gastronomic Grasp",
+      "description": "Your studies of cooking help you to spot and collect useful and precious food ingredients, whilst returning from really nice and sunny quests.",
+      "explanation": "Advancing this skill increases chance and amount of food ingredients found in quests."
+    },
+    "ru": {
+      "name": "Гастрономическая хватка",
+      "description": "Изучение кулинарии поможет вам находить и собирать полезные и ценные ингредиенты еды, возвращаясь при этом с очень приятных и солнечных приключений.",
+      "explanation": "Развитие этого навыка увеличивает шанс и количество пищевых ингредиентов, найденных в квестах."
+    },
+    "es": null
+  },
+  {
+    "code": "lb",
+    "en": {
+      "name": "Labeling",
+      "description": "Ability to organise stock logistics and arrange items appropriately allows you to save storage space.",
+      "explanation": "Advancing this skill increases the size of your stock."
+    },
+    "ru": {
+      "name": "Маркировка",
+      "description": "Редкая в наши дни способность своевременно раскладывать всё по местам позволяет вам экономить место для дополнительных запасов.",
+      "explanation": "Развитие этого навыка увеличивает вместительность вашего хранилища."
+    },
+    "es": null
+  },
+  {
+    "code": "rce",
+    "en": {
+      "name": "Chef's Insight",
+      "description": "Cooking different dishes from seemingly the same ingredients allows you to be creative, which leads to discoveries and insights",
+      "explanation": "Cooking now has the chance to award bonus EXP when cooking"
+    },
+    "ru": {
+      "name": "Интуиция шеф-повара",
+      "description": "Приготовление разных блюд из казалось бы одинаковых ингридиентов позволяет проявлять творческий подход, что приводит к открытиям и озарениям.",
+      "explanation": "Кулинария теперь может приносить дополнительный опыт при приготовлении новой пищи"
+    },
+    "es": null
+  },
+  {
+    "code": "rad",
+    "en": {
+      "name": "Heartless Delirium",
+      "description": "Wandering the forest while heavily injured let’s you see a lot of stuff, real or not. Before battle, you can unleash these unperceived horrors while you fight, turning your anger to fear as it’s a literal fight to the death.",
+      "explanation": "While questing at low health, you collect flashback charges. Before a battle, release your bottled up fears and relieve your mind of them. To release /use_rad"
+    },
+    "ru": {
+      "name": "Бессердечный бред",
+      "description": "Блуждая по лесу с тяжелыми ранениями, вы можете увидеть много всего, реального или нет. Перед битвой вы можете высвободить эти невидимые ужасы во время боя, превратив свой гнев в страх, ведь это буквально смертельная схватка.",
+      "explanation": "Во время приключений при низком уровне здоровья вы собираете заряды воспоминаний. Перед битвой выпустите свои страхи из бутылок и освободите от них свой разум. Отпустить /use_rad"
+    },
+    "es": null
+  },
+  {
+    "code": "rtr",
+    "en": {
+      "name": "Experienced Tracker",
+      "description": "Having fought so many mobs, you’ve learned to track them… and the same for them. Once a day, you can make a stand and fight the mob army, for glory and loot!",
+      "explanation": "Advancing this skills enables a once a day mob event - a window of guaranteed mobs after successful questing. Further advancements extends the time frame. To start tracking /use_rtr"
+    },
+    "ru": {
+      "name": "Опытный следопыт",
+      "description": "Сражаясь со многими мобами, вы научились выслеживать их... и их самих. Раз в день вы можете выступить и сразиться с армией мобов ради славы и добычи!",
+      "explanation": "Развитие этого навыка позволяет раз в день получать схватку - окно гарантированных мобов после успешного приключения. Дальнейшее развитие навыка увеличивает временные рамки. Чтобы начать отслеживание /use_rtr"
+    },
+    "es": null
+  },
+  {
+    "code": "mas",
+    "en": {
+      "name": "Magic Skin",
+      "description": "On the inside, you knew you were a fighter at heart. Channeling your inner powers, you found a more useful way to use it: to fuel your determination, and push through the upcoming fight.",
+      "explanation": "Increasing this skill grants the ability to use mana for HP, absorbing some damage. Further levels of training increase the effectiveness. The skill provides a bit of flat mana bonus and tiny global mana multiplier."
+    },
+    "ru": {
+      "name": "Магическая кожа",
+      "description": "Внутри вы знали, что в душе вы боец. Направляя свои внутренние силы в нужное русло, вы находили им более полезное применение: подпитывать свою решимость и пробиваться через предстоящий бой.",
+      "explanation": "Увеличение этого навыка дает возможность использовать ману для HP, поглощая часть урона. Дальнейшие уровни обучения повышают эффективность. Умение дает небольшой плоский бонус к мане и крошечный глобальный множитель маны."
+    },
+    "es": null
+  },
+  {
+    "code": "ckn",
+    "en": {
+      "name": "Cooking",
+      "description": "Sick of the castle’s food, you fled to the land in search of some yum yum. A little pine needle, some beef, and honey go a far way, but leave some effects on the stomach…",
+      "explanation": "Advancing this skill opens the door for new recipes and advancement in abilities. Use /use_ckn to start cooking."
+    },
+    "ru": {
+      "name": "Готовка",
+      "description": "Вам надоела еда в замке, и вы сбежали на землю в поисках вкусняшек. Немного хвои, немного говядины и меда - это далеко не все, но оставляет некоторые последствия для желудка...",
+      "explanation": "Развитие навыка открывает двери для новых рецептов и улучшения способностей. Используйте /use_ckn, чтобы начать готовить."
+    },
+    "es": null
+  },
+  {
+    "code": "cll",
+    "en": {
+      "name": "Collection",
+      "description": "Trained eyes and natural senses help you to find more spoils upon exploration of the forests and wild territories.",
+      "explanation": "Advancing this skill increases the amount of resources found."
+    },
+    "ru": {
+      "name": "Добыча",
+      "description": "Намётанный глаз и природное чутьё помогают вам находить больше добычи при при исследовании лесов, долин и болот.",
+      "explanation": "Развитие этого навыка увеличивает количество найденых ресурсов"
+    },
+    "es": null
+  },
+  {
+    "code": "se",
+    "en": {
+      "name": "Smart Explorer",
+      "description": "Mysterious objects hide many secrets. You always learn something new, when you find them.",
+      "explanation": "Advancing this skill increases the daily limit for bonus experience you gain from finding extra items."
+    },
+    "ru": {
+      "name": "Толковый исследователь",
+      "description": "Загадочные редкие предметы скрывают множество секретов. Вам всегда удаётся изучить что-то новое, когда вы их находите.",
+      "explanation": "Развитие этого навыка увеличивает дневной лимит опыта, получаемого при нахождении предметов."
+    },
+    "es": null
+  },
+  {
+    "code": "shf",
+    "en": {
+      "name": "Shared food",
+      "description": "You know that clashes are often more grueling than you'd like them to be. To avoid getting too tired and to support those who have shared the battle with you, you are willing to share a meal with your brothers in arms. In other words, food in need is food indeed.",
+      "explanation": "Developing the skill increases the duration of the effect and the chance of triggering. To use the skill, eat a variety of food and don't avoid the encounters after hiking in the woods."
+    },
+    "ru": {
+      "name": "Общая еда",
+      "description": "Вы знаете, что стычки часто бывают более изнурительными, чем вам хотелось бы. Чтобы не сильно устать и поддержать тех, кто разделил с вами битву, вы готовы разделить трапезу с братьями по оружию. Иными словами, еда познаётся в беде.",
+      "explanation": "Развитие навыка увелчивает длительность эффекта и шанс срабатывания. Чтобы применить умение питайтесь разнообразно и не избегайте кофликтов после походов в лес."
+    },
+    "es": null
+  },
+  {
+    "code": "cex",
+    "en": {
+      "name": "Culinary experiment",
+      "description": "Cook with heart. You have some serious experience, and now you can improvise even more. By looking at the taste map from different perspectives, you see possibilities for original and, importantly, edible results.",
+      "explanation": ""
+    },
+    "ru": {
+      "name": "Кулинарный эксперимент",
+      "description": "Готовьте с душой. У вас есть серьезный опыт, и теперь вы можете импровизировать еще больше. Рассматривая карту вкуса с разных точек зрения, вы видите возможности для достижения оригинальных и, что немаловажно, съедобных результатов.",
+      "explanation": ""
+    },
+    "es": null
+  },
+  {
+    "code": "cft",
+    "en": {
+      "name": "Crafting",
+      "description": "Being an expert in your craftsmanship gives you an ability to craft complex items.",
+      "explanation": "Advancing this skill allows you to craft more complicated items."
+    },
+    "ru": {
+      "name": "Ремесло",
+      "description": "Будучи искусным ремеслеником, вы можете творить такие предметы, что другим не под силу.",
+      "explanation": "Развитие этого навыка позволяет вам создавать более сложные предметы."
+    },
+    "es": null
+  },
+  {
+    "code": "et",
+    "en": {
+      "name": "Educated Technician",
+      "description": "Like a true master you are, every time you craft an item, you learn something new.",
+      "explanation": "Advancing this skill increases the daily limit for bonus experience you gain from crafting."
+    },
+    "ru": {
+      "name": "Образованный инженер",
+      "description": "Как истинный мастер своего дела, при создании предметов вы каждый раз видите в них что-то новое и особенное.",
+      "explanation": "Развитие этого навыка увеличивает дневной лимит опыта, получаемого при крафте"
+    },
+    "es": null
+  },
+  {
+    "code": "wng",
+    "en": {
+      "name": "Wingman",
+      "description": "In the forest lives a Mercenary Camp. Within the confines of the camp, many rough and tough people reside. With a big enough coin bag, influence, or favors, people can be recruited to your cause.",
+      "explanation": "Advancing this skill will increase base stats, amount of mercenaries and pieces of equipment one can afford. To have a small talk with them /use_wng"
+    },
+    "ru": {
+      "name": "Ведомый",
+      "description": "В лесу есть Лагерь наемников. В пределах лагеря живет много грубых и жестких людей. При наличии достаточно большого мешка монет, влияния или услуг, людей можно привлечь на свою сторону.",
+      "explanation": "Развитие навыка увеличивает характеристики, количество наемников и предметов снаряжения, которые можно себе позволить."
+    },
+    "es": null
+  },
+  {
+    "code": "eve",
+    "en": {
+      "name": "Everlasting Endurance",
+      "description": "Having been hit over the head so many times, you’ve learned a way to recollect yourself faster than normal. It’s tiring though, and can not be done too often.",
+      "explanation": "So, when your HP hits fall to zero, you’ll get a little boost. Leveling up further increases the percentage of return."
+    },
+    "ru": {
+      "name": "Бесконечная выносливость",
+      "description": "После того как вас столько раз били по голове, вы научились приходить в себя быстрее, чем обычно. Однако это утомительно, и это нельзя делать слишком часто.",
+      "explanation": "Таким образом, когда ваше здоровье упадет до нуля, вы получите небольшую прибавку. Повышение уровня еще больше увеличивает процент отдачи."
+    },
+    "es": null
+  },
+  {
+    "code": "dwm",
+    "en": {
+      "name": "Double Trouble",
+      "description": "After accidentally picking up two swords, Thomas Two Swords invented the idea of duel wielding. However, he tended to lose the other one quite often when facing failure...",
+      "explanation": "Advancing this skill unlocks the ability to wield two main weapons, and do more damage with the second weapon."
+    },
+    "ru": {
+      "name": "Мастер на все руки",
+      "description": "Случайно подобрав два меча, Томас Два Меча придумал идею дуэльного владения. Однако, он обычно теряет один, столкнувшись с неудачей...",
+      "explanation": "Развитие этого навыка открывает возможность владения двумя основными видами оружия и нанесения большего урона вторым оружием."
+    },
+    "es": null
+  },
+  {
+    "code": "br",
+    "en": {
+      "name": "Broker",
+      "description": "As an experienced trader, you are able to look after numerous exchange deals at a time.",
+      "explanation": "Advancing this skill increases maximum number of stock exchange deals."
+    },
+    "ru": {
+      "name": "Брокер",
+      "description": "Как опытный трейдер, вы можете одновременно следить за большим количеством событий на бирже ресурсов.",
+      "explanation": "Развитие этого навыка увеличивает максимальное количество слотов на бирже."
+    },
+    "es": null
+  },
+  {
+    "code": "pob",
+    "en": {
+      "name": "Porcelain Boy",
+      "description": "Ow ow ow! Being a mama’s boy is hard… every day you get a little scrape or bump for show, but on the inside you know it doesn’t hurt; it’s all for show, deceiving those around you.",
+      "explanation": "Advancing this skills increases what’s considered “low HP,” advancement raises the percentage range, and access to some rare but very personal flashbacks."
+    },
+    "ru": {
+      "name": "Фарфоровый мальчик",
+      "description": "Ой-ой-ой! Быть маменькиным сынком тяжело... каждый день у тебя появляется маленькая царапинка или шишка, но внутри ты знаешь, что это не больно, это все напоказ, чтобы обмануть окружающих.",
+      "explanation": "Развитие этого навыка увеличивает то, что считается \"низким HP\", улучшение повышает процентный диапазон, а также открывает доступ к редким, но очень личным воспоминаниям."
+    },
+    "es": null
+  },
+  {
+    "code": "ew",
+    "en": {
+      "name": "Enlightened Warrior",
+      "description": "Being a naturally born warrior, you learn from your victories and losses, coming out wiser from every battle.",
+      "explanation": "Advancing this skill increases the daily limit for bonus experience you gain from the battle."
+    },
+    "ru": {
+      "name": "Просветленный воин",
+      "description": "Вы прирождённый воин, все ваши победы и поражения служат цели достижения воинской мудрости.",
+      "explanation": "Развитие этого навыка увеличивает дневной лимит для опыта, получаемого в битвах"
+    },
+    "es": null
+  },
+  {
+    "code": "cty",
+    "en": {
+      "name": "Curiousity",
+      "description": "During the battle you scatter through the battlefield, looking for a shiny coin.",
+      "explanation": "Advancing this skill increases the gold you obtain on the battlefield."
+    },
+    "ru": {
+      "name": "Любопытство",
+      "description": "Во время сражения вы перемещаетесь по полю боя в поисках блестящей монетки.",
+      "explanation": "Развитие навыка увеличивает количество золота, которое вы получаете на поле боя."
+    },
+    "es": null
+  },
+  {
+    "code": "wm",
+    "en": {
+      "name": "Weapon Mastery",
+      "description": "Experience and training grant you bonus stats while bearing any weapon.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение оружием",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, пока у вас в руках любое оружие.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "am",
+    "en": {
+      "name": "Armor Mastery",
+      "description": "Experience and training grant you bonus stats while wearing any armor.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение броней",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, когда вы носите любую броню.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "brr",
+    "en": {
+      "name": "Barn Robber",
+      "description": "You pay more attention to the resources, rather than gold, so you focus on robbing barns, not banks.",
+      "explanation": "Advancing this skill increases number of stock you obtain on the battlefield."
+    },
+    "ru": {
+      "name": "Расхититель амбаров",
+      "description": "Вы больше внимания уделяете ресурсам, а не золоту, поэтому вы сосредоточены на ограблении амбаров, а не банков.",
+      "explanation": "Развитие этого навыка увеличивает количество получаемых вами на поле боя припасов."
+    },
+    "es": null
+  },
+  {
+    "code": "hmr",
+    "en": {
+      "name": "Hamster",
+      "description": "Your inner hamster shows you the new ways to hide your stock.",
+      "explanation": "Advancing this skill decreases the amount of stock you lose upon your castle being breached."
+    },
+    "ru": {
+      "name": "Хомяк",
+      "description": "Ваш внутренний хомяк показывает вам новые способы спрятать свои запасы.",
+      "explanation": "Развитие навыка уменьшает количество запасов, которые вы теряете при проникновении в ваш замок."
+    },
+    "es": null
+  },
+  {
+    "code": "dl",
+    "en": {
+      "name": "Prudent Duelist",
+      "description": "Being an excellent duelist, you learn more from your victories at the arena.",
+      "explanation": "Advancing this skill increases the daily limit for bonus experience you gain from the arena."
+    },
+    "ru": {
+      "name": "Осторожный дуэлянт",
+      "description": "Вы — талантливый дуэлянт! Это помогает обучаться эффективнее, сражаясь на арене.",
+      "explanation": "Развитие этого навыка увеличивает дневной лимит для опыта, получаемого на арене."
+    },
+    "es": null
+  },
+  {
+    "code": "rdr",
+    "en": {
+      "name": "Raider",
+      "description": "Being a fierce warrior you loot every single coin you can find during your attacks.",
+      "explanation": "Advancing this skill increases the gold you obtain on the battlefield in a successful attack."
+    },
+    "ru": {
+      "name": "Налетчик",
+      "description": "Будучи свирепым воином, вы собираете все монеты, которые можете найти во время своих атак.",
+      "explanation": "Развитие навыка увеличивает количество золота, которое вы получаете на поле боя при успешной атаке."
+    },
+    "es": null
+  },
+  {
+    "code": "tgp",
+    "en": {
+      "name": "Tight Grip",
+      "description": "Your firm grip prevents you from losing your equipment and help to disarm enemies on the battlefield.",
+      "explanation": "Advancing this skill increases the chance to disarm enemy and parry opponents attempt to do the same against you on the battlefield."
+    },
+    "ru": {
+      "name": "Крепкая Хватка",
+      "description": "Крепкий хват предотвращает потерю снаряжения и помогает обезоружить врагов на поле боя.",
+      "explanation": "Развитие этого навыка увеличивает шанс обезоружить врага и парировать попытки противников сделать то же самое против вас на поле боя."
+    },
+    "es": null
+  },
+  {
+    "code": "lrh",
+    "en": {
+      "name": "Lefty right-handed",
+      "description": "This type of specialization essentially improves everything about off-hand tools and weapons in every possible way.",
+      "explanation": ""
+    },
+    "ru": {
+      "name": "Левша-правша",
+      "description": "Этот тип специализации, по сути, улучшает все, что связано со вторичными инструментами и оружием, всеми возможными способами",
+      "explanation": ""
+    },
+    "es": null
+  },
+  {
+    "code": "blm",
+    "en": {
+      "name": "Blunt Mastery",
+      "description": "Experience and training grant you bonus stats while bearing a blunt weapon.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение дробящим оружием",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, пока у вас в руках молот или топор.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "gp",
+    "en": {
+      "name": "Gifted Pathfinder",
+      "description": "You are a true born traveller. Doing what you love inspires and excites you.",
+      "explanation": "Advancing this skill increases chance to regenerate stamina during quests."
+    },
+    "ru": {
+      "name": "Одаренный следопыт",
+      "description": "Вы - прирожденный путешественник. Занятие любимым делом вдохновляет и волнует вас.",
+      "explanation": "Развитие этого навыка увеличивает шанс регенерации выносливости во время приключений."
+    },
+    "es": null
+  },
+  {
+    "code": "lm",
+    "en": {
+      "name": "Light Armor Mastery",
+      "description": "Experience and training grant you bonus stats while wearing a light armor.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение легкой броней",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, когда вы носите лёгкую броню.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "ohm",
+    "en": {
+      "name": "Off-Hand Mastery",
+      "description": "Only those, who use both hands achieve excellence both on the battlefield and in personal life.",
+      "explanation": "Advancing this skill increases effectiveness of the item in your secondary hand."
+    },
+    "ru": {
+      "name": "Мастер второй руки",
+      "description": "Только те, кто использует обе руки, достигают совершенства как на поле боя, так и в личной жизни.",
+      "explanation": "Развитие навыка повышает эффективность предмета во второй руке."
+    },
+    "es": null
+  },
+  {
+    "code": "tgp",
+    "en": {
+      "name": "Tight Grip",
+      "description": "Your firm grip prevents you from losing your equipment and help to disarm enemies on the battlefield.",
+      "explanation": "Advancing this skill increases the chance to disarm enemy and parry opponents attempt to do the same against you on the battlefield."
+    },
+    "ru": {
+      "name": "Крепкая Хватка",
+      "description": "Крепкий хват предотвращает потерю снаряжения и помогает обезоружить врагов на поле боя.",
+      "explanation": "Развитие этого навыка увеличивает шанс обезоружить врага и парировать попытки противников сделать то же самое против вас на поле боя."
+    },
+    "es": null
+  },
+  {
+    "code": "prn",
+    "en": {
+      "name": "Perception",
+      "description": "Since the very young age you were able to find things that are invisible to the common eye.",
+      "explanation": "Advancing this skill increases the tier of the items you are able to find."
+    },
+    "ru": {
+      "name": "Проницательность",
+      "description": "С самого раннего возраста вы умели находить вещи, невидимые для обычного глаза.",
+      "explanation": "Развитие этого навыка повышает класс предметов, которые вы можете найти"
+    },
+    "es": null
+  },
+  {
+    "code": "crl",
+    "en": {
+      "name": "Collectors Sense",
+      "description": "Sharing your wisdom helps allies to find useful items in battles. Use /use_crl to activate.",
+      "explanation": "Advancing this skill increases the possible number of allies, elightened by your wisdom."
+    },
+    "ru": {
+      "name": "Чутье добытчика",
+      "description": "Поделитесь своей мудростью, чтобы помочь союзникам найти полезные предметы в битвах. Для активации используйте /use_crl.",
+      "explanation": "Развитие навыка увеличивает возможное число союзников, освещаемое вашей мудростью."
+    },
+    "es": null
+  },
+  {
+    "code": "pe",
+    "en": {
+      "name": "Picky Eater",
+      "description": "You are a bit picky when it comes to your loot, aren't you? Try /use_pe.",
+      "explanation": "Advancing this skill increases the number of resources you can afford to ignore in favour of other."
+    },
+    "ru": {
+      "name": "Избирательный подход",
+      "description": "Вы немного придирчивы, когда речь идет о добыче, не так ли? Попробуйте /use_pe.",
+      "explanation": "Развитие навыка увеличивает количество ресурсов, которые вы можете позволить себе игнорировать в пользу других."
+    },
+    "es": null
+  },
+  {
+    "code": "nt",
+    "en": {
+      "name": "Natural Talent",
+      "description": "Your teacher taught you how to use your inner energy.",
+      "explanation": "Advancing this skill increases the amount of mana you have."
+    },
+    "ru": {
+      "name": "Природный дар",
+      "description": "Ваш учитель показал вам, как использовать свою внутреннюю энергию.",
+      "explanation": "Развитие этого навыка увеличивает количество имеющейся у вас маны."
+    },
+    "es": null
+  },
+  {
+    "code": "ws",
+    "en": {
+      "name": "Work to standards",
+      "description": "By mastering every technique known to mankind, you have created your own blueprints that allow you to save some materials.",
+      "explanation": "Advancing this skill increases the chance and the amount of materials saved while crafting."
+    },
+    "ru": {
+      "name": "Работаем по стандартам",
+      "description": "Хорошенько изучив все мыслимые и немыслимые рецепты, вы создаёте свои. Такие, которые позволяют без потери качества убирать все лишнее и экономить материалы, которые на дороге не валяются.",
+      "explanation": "Развитие этого навыка увеличивает шанс сохранения и количество сэкономленных ресурсов при крафте."
+    },
+    "es": null
+  },
+  {
+    "code": "bw",
+    "en": {
+      "name": "Blacksmith's wonders",
+      "description": "Your hand is steady and your hammer is swift. Magic powers granted to you from above allow you to occasionally duplicate an item.",
+      "explanation": "Advancing this skill increases the chance to craft an extra item."
+    },
+    "ru": {
+      "name": "Кузнечные чудеса",
+      "description": "Руки знают своё дело, инструменты идеально подобраны, чудесный дар, ниспосланный вам свыше, позволяет иногда как бы случайно смастерить два предмета вместо одного.",
+      "explanation": "Развитие этого навыка увеличивает шанс получить дополнительный предмет при варке или крафте."
+    },
+    "es": null
+  },
+  {
+    "code": "cpm",
+    "en": {
+      "name": "Combat Potions Mastery",
+      "description": "Even quiet, undistinguished scientists have to participate in warfare. Such practices allow you to make combat use of your potions - poison foes, heal friends, enchance yourself.",
+      "explanation": "Advancing this skill increases bonus stats from potions. It also increases chance to poison an enemy or heal an ally."
+    },
+    "ru": {
+      "name": "Владение боевыми зельями",
+      "description": "Даже тихим, ничем не выделяющимся ученым приходится участвовать в военных действиях. Подобные практики позволяют использовать зелья в бою - отравлять врагов, исцелять друзей, зачаровывать себя.",
+      "explanation": "Развитие этого навыка увеличивает бонусные характеристики от зелий. Также увеличивается шанс отравить врага или исцелить союзника."
+    },
+    "es": null
+  },
+  {
+    "code": "cpa",
+    "en": {
+      "name": "Potion Madness",
+      "description": "You enjoy smelling the fumes of your potions all over the dead corpses, so you have learnt to throw more of them around.",
+      "explanation": "Advancing this skill increases number of poisoned targets and bonus stats."
+    },
+    "ru": {
+      "name": "Сумасшедшее зельеварение",
+      "description": "Вам нравится нюхать испарения ваших зелий на мертвых трупах, поэтому вы научились разбрасывать их побольше.",
+      "explanation": "Развитие навыка увеличивает количество отравленных целей и бонусы к характеристикам."
+    },
+    "es": null
+  },
+  {
+    "code": "wal",
+    "en": {
+      "name": "Wise Alchemist",
+      "description": "With every potion you create, you think of a new way to improve your technique.",
+      "explanation": "Advancing this skill increases the daily limit for bonus experience you gain from brewing."
+    },
+    "ru": {
+      "name": "Мудрый алхимик",
+      "description": "С каждым сваренным зельем вы ищете и иногда находите способ улучшить свою технику.",
+      "explanation": "Развитие этого навыка увеличивает дневной лимит опыта, получаемого при варке"
+    },
+    "es": null
+  },
+  {
+    "code": "alm",
+    "en": {
+      "name": "Alchemy",
+      "description": "Devotion to mysterious arts of potion making taught you how to create useful elixirs from trivial ingredients.",
+      "explanation": "Advancing this skill allows you to brew more advanced potions."
+    },
+    "ru": {
+      "name": "Алхимия",
+      "description": "Преданность таинственному искусству зельеварения научила вас создавать полезные эликсиры из банальных ингредиентов.",
+      "explanation": "Развитие навыка позволяет вам варить более сложные зелья."
+    },
+    "es": null
+  },
+  {
+    "code": "qty",
+    "en": {
+      "name": "Quality Craft",
+      "description": "Using your amazing expertise in crafting specific items, you can now craft them better than other blacksmiths. But real mastery is only for those who are determined. You will inevitably lose your skill in one gear while advancing another.",
+      "explanation": "Advancing this skill improves your learning curve and increases the chance to craft a higher quality gear."
+    },
+    "ru": {
+      "name": "Качественная сборка",
+      "description": "Используя свой удивительный опыт в изготовлении определенных предметов, вы теперь можете делать их лучше, чем другие кузнецы. Но настоящее мастерство доступно только тем, кто настроен решительно. Вы неизбежно будете терять мастерство в одной специализации, продвигаясь в другой.",
+      "explanation": "Развитие навыка улучшает кривую обучения и увеличивает шанс создать более качественное снаряжение."
+    },
+    "es": null
+  },
+  {
+    "code": "ll",
+    "en": {
+      "name": "Long Life",
+      "description": "In search for an ultimate elixir of eternal life, you managed to at least extend your endurance on expeditions and quests.",
+      "explanation": "Advancing this skill increases maximum stamina limit."
+    },
+    "ru": {
+      "name": "Долговечность",
+      "description": "В поисках эликсира вечной жизни вам удалось хотя бы продлить свою выносливость в экспедициях и приключениях.",
+      "explanation": "Развитие этого навыка увеличивает максимальный лимит выносливости."
+    },
+    "es": null
+  },
+  {
+    "code": "rm",
+    "en": {
+      "name": "Robe Armor Mastery",
+      "description": "Experience and training grant you bonus stats while wearing a robe armor.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение магической броней",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, когда вы носите робы.\n",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "cg",
+    "en": {
+      "name": "Mighty Golem",
+      "description": "Make yourself a mighty minion to help you fight your foes. Do /use_cg (resource code) to create one.",
+      "explanation": "Advancing this skill increases strength of a golem and reduces amount of required materials."
+    },
+    "ru": {
+      "name": "Могучий Голем",
+      "description": "Создайте себе могущественного миньона, который поможет вам сражаться с врагами. Чтобы создать его, выполните команду /use_cg (код ресурса).",
+      "explanation": "Развитие навыка увеличивает силу голема и уменьшает количество необходимых материалов."
+    },
+    "es": null
+  },
+  {
+    "code": "cpd",
+    "en": {
+      "name": "A Touch of God",
+      "description": "Making miracles is kinda your thing, and now you trained to help more people. Good thing they don't know that miracles are just potions.",
+      "explanation": "Advancing this skill increases number of healed targets and bonus stats."
+    },
+    "ru": {
+      "name": "С божьей помощью",
+      "description": "Творить чудеса - это вроде как ваш конек, и теперь вы прошли обучение, чтобы помочь большему количеству людей. Хорошо, что они не знают, что чудеса - это просто зелья.",
+      "explanation": "Развитие навыка увеличивает количество исцеляемых целей и бонусы к характеристикам."
+    },
+    "es": null
+  },
+  {
+    "code": "hst",
+    "en": {
+      "name": "Harvest",
+      "description": "Your studies of herbology help you to spot and collect useful and precious ingredients, whilst enjoying really nice and sunny quests.",
+      "explanation": "Advancing this skill increases chance and amount of herbs found in quests."
+    },
+    "ru": {
+      "name": "Сбор урожая",
+      "description": "Изучение гербологии поможет вам находить и собирать полезные и ценные ингредиенты, наслаждаясь при этом действительно приятными и солнечными приключениями.",
+      "explanation": "Развитие этого навыка увеличивает шанс и количество трав, найденных в квестах."
+    },
+    "es": null
+  },
+  {
+    "code": "uc",
+    "en": {
+      "name": "Unringing a Bell",
+      "description": "You are the only one capable of unringing that darn bell. Use /use_uc (resource code) (quantity)",
+      "explanation": "Advancing this skill increases the amount of resources returned."
+    },
+    "ru": {
+      "name": "Разборка",
+      "description": "Только вы способны снять этот чертов колокол. Используйте /use_uc (код ресурса) (количество)",
+      "explanation": "Развитие навыка увеличивает количество возвращаемых ресурсов."
+    },
+    "es": null
+  },
+  {
+    "code": "tvn",
+    "en": {
+      "name": "Bard",
+      "description": "Your childhood memories of bards' tales help you to get something useful from an ordinary visit to the tavern. And you better hope to never drink alone.",
+      "explanation": "Advancing this skill increases your chance to learn something new."
+    },
+    "ru": {
+      "name": "Бард",
+      "description": "Ваши детские воспоминания о сказках бардов помогают вам извлечь что-то полезное из обычного посещения таверны. И лучше надеяться, что вы никогда не будете пить в одиночку.",
+      "explanation": "Развитие навыка увеличивает шанс научиться чему-то новому."
+    },
+    "es": null
+  },
+  {
+    "code": "trm",
+    "en": {
+      "name": "Herbs Transmutation",
+      "description": "A useful side effect of your researches in herbs and ancient sciences. You can /use_trm for more info.",
+      "explanation": "Advancing this skill increases the chance of successful conversion."
+    },
+    "ru": {
+      "name": "Трансмутация трав",
+      "description": "Полезный побочный эффект ваших исследований в области трав и древних наук. Вы можете /use_trm for для подробностей",
+      "explanation": "Развитие этого навыка увеличивает шанс успешного превращения."
+    },
+    "es": null
+  },
+  {
+    "code": "mbl",
+    "en": {
+      "name": "Mobility",
+      "description": "Regular training and triathlon practice help you to stay alert with every new target.",
+      "explanation": "Advancing this skill decreases the loss of aiming progress."
+    },
+    "ru": {
+      "name": "Мобильность",
+      "description": "Регулярные тренировки и занятия триатлоном помогут вам не терять бдительности при достижении каждой новой цели.",
+      "explanation": "Развитие этого навыка уменьшает потерю прогресса в прицеливании."
+    },
+    "es": null
+  },
+  {
+    "code": "trp",
+    "en": {
+      "name": "It's a trap!",
+      "description": "Being jealous of others enriching themselves, you have learnt sneaky ways to steal some valuables, when people least expect it. Use /use_trp to access your trapper's equipment.",
+      "explanation": "Advancing this skill increases the chance to set a trap, their efficiency and a variety of your tools"
+    },
+    "ru": {
+      "name": "Ловушка!",
+      "description": "Завидуя тому, как обогащаются другие, вы научились хитрым способам кражи ценностей, когда люди меньше всего этого ожидают. Используйте /use_trp, чтобы получить доступ к снаряжению траппера.",
+      "explanation": "Развитие навыка увеличивает шанс установить ловушку, их эффективность и разнообразие ваших инструментов"
+    },
+    "es": null
+  },
+  {
+    "code": "crp",
+    "en": {
+      "name": "Muscles, not Brains",
+      "description": "Knight train big. Now knight hit hard. Big Boom!",
+      "explanation": "Advancing this skill increases the power of your critical strike."
+    },
+    "ru": {
+      "name": "Качай мышцы, а не мозги",
+      "description": "Рыцарь тренируется по-крупному. Теперь рыцарь бьет сильно. Большой бум!",
+      "explanation": "Развитие навыка увеличивает силу критического удара."
+    },
+    "es": null
+  },
+  {
+    "code": "crt",
+    "en": {
+      "name": "Critical hit!",
+      "description": "Your muscles are filled with weird power and you strike with all your might. Unfortunately it happens once so often.",
+      "explanation": "Advancing this skill increases the chance to deal a critical strike."
+    },
+    "ru": {
+      "name": "Критический удар!",
+      "description": "Ваши мышцы наполняются странной силой, и вы наносите удар изо всех сил. К сожалению, это случается не очень часто.",
+      "explanation": "Развитие навыка увеличивает шанс нанести критический удар."
+    },
+    "es": null
+  },
+  {
+    "code": "aim",
+    "en": {
+      "name": "Aiming",
+      "description": "Every ranger knows the necessity of practice and adjustment to a new target. With training and experience, you learn to aim faster. But be careful to change the spot and the target from time to time, so that attentive enemies have less chance to interfere with you.",
+      "explanation": "Advancing this skill reduces time needed to gain stats bonus."
+    },
+    "ru": {
+      "name": "Прицеливание",
+      "description": "Каждый рейнджер знает о необходимости практики и привыкания к новой цели. С тренировками и опытом вы научитесь целиться быстрее. Но будьте осторожны и время от времени меняйте место и цель, чтобы у внимательных врагов было меньше шансов помешать вам.",
+      "explanation": "Развитие этого навыка уменьшает время, необходимое для получения бонуса к характеристикам."
+    }
+  },
+  {
+    "code": "eye",
+    "en": {
+      "name": "Hawkeye",
+      "description": "Your arrow pierced your enemy to the battleground. It makes it really hard for him to participate in the battle. Meanwhile, in the hunt time, your keen eye can notice much more victory opportunities than others.",
+      "explanation": "Advancing this skill increases the chance and amount of enemy wounds."
+    },
+    "ru": {
+      "name": "Ястребиный глаз",
+      "description": "Ваша стрела пронзила врага на поле боя. Это сильно затрудняет его участие в битве. Между тем, во время охоты ваш зоркий глаз может заметить гораздо больше возможностей для победы, чем у других.",
+      "explanation": "Развитие этого навыка увеличивает шанс и количество ранений у противника."
+    },
+    "es": null
+  },
+  {
+    "code": "lcn",
+    "en": {
+      "name": "Look! A coin!",
+      "description": "Your ancestors must be related to dragons or dwarfs, otherwise how else to explain your excellent sense of gold?",
+      "explanation": "Advancing this skill increases the chance to get more and the amount of gold obtained from quests."
+    },
+    "ru": {
+      "name": "Опа! Монетка!",
+      "description": "Ваши предки, должно быть, связаны с драконами или гномами, иначе как еще объяснить ваше превосходное чувство золота?",
+      "explanation": "Развитие навыка увеличивает количество золота, которое вы получаете в приключениях."
+    },
+    "es": null
+  },
+  {
+    "code": "pn",
+    "en": {
+      "name": "Power Napping",
+      "description": "Being a mobile warrior, you are used to rest at any place under any conditions. Instantly going to sleep and making the most out of quick breaks isn't a problem for you.",
+      "explanation": "Advancing this skill increases speed of stamina regeneration, while you are at rest."
+    },
+    "ru": {
+      "name": "Крепкий сон",
+      "description": "Будучи мобильным воином, вы привыкли отдыхать в любом месте при любых условиях. Мгновенно заснуть и извлечь максимум пользы из быстрых перерывов для вас не проблема.",
+      "explanation": "Развитие этого навыка увеличивает скорость регенерации выносливости, пока вы находитесь в состоянии покоя."
+    },
+    "es": null
+  },
+  {
+    "code": "acc",
+    "en": {
+      "name": "Accuracy",
+      "description": "You certainly remember lessons of your master-at-arms. Your ears still hurt for shooting those arrows gods know where. Now even elves will be jealous of your aiming skills. Also, you can concentrate on the most hated enemy to find and hit in the heat of the battle.",
+      "explanation": "Advancing this skill decreases the amount of ammo you need in combat. Use /use_acc to select favorite enemy."
+    },
+    "ru": {
+      "name": "Точность",
+      "description": "Ты, конечно, помнишь уроки своего мастера по оружию. У тебя до сих пор болят уши от стрел, выпущенных бог знает куда. Теперь даже эльфы будут завидовать вашему умению прицеливаться. Кроме того, вы сможете сосредоточиться на самом ненавистном враге, которого нужно найти и поразить в пылу битвы.",
+      "explanation": "Развитие навыка уменьшает количество расходных материалов, необходимых в бою. Используйте /use_acc для выбора предпочитаемого врага."
+    },
+    "es": null
+  },
+  {
+    "code": "ps",
+    "en": {
+      "name": "Perceptive Seeker",
+      "description": "Having a sharp eye, you are able to learn from everything you see while on an adventure.",
+      "explanation": "Advancing this skill increases the daily limit for bonus experience you gain from the quests."
+    },
+    "ru": {
+      "name": "Пытливый ищейка",
+      "description": "Зоркий взгляд и внимание к деталям помогают вам обучаться, просто наблюдая за происходящим вокруг во время путешествий.",
+      "explanation": "Развитие этого навыка увеличивает дневной лимит опыта, получаемого в квестах"
+    },
+    "es": null
+  },
+  {
+    "code": "as",
+    "en": {
+      "name": "Agile Soldier",
+      "description": "You are a true born fighter. Doing what you love inspires and excites you.",
+      "explanation": "Advancing this skill increases chance to regenerate stamina during the attack. Increases chance to regenerate stamina during defense with half of the efficiency. Increases chance to regenerate additional stamina in a tough battle."
+    },
+    "ru": {
+      "name": "Ловкий солдат",
+      "description": "Вы - прирожденный боец. Занятие любимым делом вдохновляет и волнует вас.",
+      "explanation": "Развитие этого навыка увеличивает шанс регенерации выносливости во время атаки. Увеличивает шанс восстановления выносливости во время защиты с половиной эффективности. Увеличивает шанс восстановить дополнительную выносливость в тяжелом бою."
+    },
+    "es": null
+  },
+  {
+    "code": "ptp",
+    "en": {
+      "name": "Pledge to Protect",
+      "description": "You like foray, tributes and pledges. Just do it more and more.",
+      "explanation": "Advancing this skill increases chance to meet tribute ready villagers more often."
+    },
+    "ru": {
+      "name": "Обет защиты",
+      "description": "Вам нравятся набеги, подношения и обещания. Просто делайте это больше и больше.",
+      "explanation": "Развитие этого навыка увеличивает шанс чаще встретить готовых к покорности жителей деревни."
+    },
+    "es": null
+  },
+  {
+    "code": "swd",
+    "en": {
+      "name": "Sword Mastery",
+      "description": "Experience and training grant you bonus stats while bearing a sword.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение мечом",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, пока у вас в руках меч.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "brr",
+    "en": {
+      "name": "Barn Robber",
+      "description": "You pay more attention to the resources, rather than gold, so you focus on robbing barns, not banks.",
+      "explanation": "Advancing this skill increases number of stock you obtain on the battlefield."
+    },
+    "ru": {
+      "name": "Расхититель амбаров",
+      "description": "Вы больше внимания уделяете ресурсам, а не золоту, поэтому вы сосредоточены на ограблении амбаров, а не банков.",
+      "explanation": "Развитие этого навыка увеличивает количество получаемых вами на поле боя припасов."
+    },
+    "es": null
+  },
+  {
+    "code": "dg",
+    "en": {
+      "name": "Dagger Mastery",
+      "description": "Experience and training grant you bonus stats while bearing a dagger.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение кинжалом",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, пока у вас в руках кинжал.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "rdr",
+    "en": {
+      "name": "Raider",
+      "description": "Being a fierce warrior you loot every single coin you can find during your attacks.",
+      "explanation": "Advancing this skill increases the gold you obtain on the battlefield in a successful attack."
+    },
+    "ru": {
+      "name": "Налетчик",
+      "description": "Будучи свирепым воином, вы собираете все монеты, которые можете найти во время своих атак.",
+      "explanation": "Развитие навыка увеличивает количество золота, которое вы получаете на поле боя при успешной атаке."
+    },
+    "es": null
+  },
+  {
+    "code": "brm",
+    "en": {
+      "name": "Rare Mutatuion",
+      "description": "You were trained for this since you were a little kid. They were feeding you strange mushrooms and herbs. Now you can drink potions that would otherwise be poisonous as if they were water. But as a result, you are sterile.",
+      "explanation": "Advancing this skill increases the duration effect of the potions."
+    },
+    "ru": {
+      "name": "Редкая Мутация",
+      "description": "Тебя готовили к этому с самого детства. Они кормили тебя странными грибами и травами. Теперь ты можешь пить зелья, которые иначе были бы ядовитыми, как воду. Но в результате вы стерильны.",
+      "explanation": "Развитие этого навыка увеличивает продолжительность действия зелий."
+    },
+    "es": null
+  },
+  {
+    "code": "tcs",
+    "en": {
+      "name": "Tactics",
+      "description": "True protector studies how his enemies attack. That allows him to develop unique tactics that are most efficient against specific foes.",
+      "explanation": "Advancing this skill decreases effectiveness of attack from selected castle."
+    },
+    "ru": {
+      "name": "Тактика",
+      "description": "Истинный защитник изучает, как атакуют его враги. Это позволяет ему разрабатывать уникальные тактики, которые наиболее эффективны против конкретных противников.",
+      "explanation": "Развитие этого навыка снижает эффективность атаки из выбранного замка."
+    },
+    "es": null
+  },
+  {
+    "code": "ld",
+    "en": {
+      "name": "Lucky Defender!",
+      "description": "Lucky fellah, eh? It's nice not to lose anything in a lost battle, ain't it?",
+      "explanation": "Advancing this skill increases the chance of having a lucky defense."
+    },
+    "ru": {
+      "name": "Удачливый защитник!",
+      "description": "Счастливчик, да? Приятно ничего не терять в проигранной битве, не так ли?",
+      "explanation": "Развитие навыка увеличивает шанс удачной защиты."
+    },
+    "es": null
+  },
+  {
+    "code": "tnt",
+    "en": {
+      "name": "Taunt",
+      "description": "To your enemies, your presence on the battle is like a red flag to a bull. Not only you distract them from primary targets, but you also channel their anger to your benefit. Use /use_tnt to activate",
+      "explanation": "Advancing this skill increases range and chance of success."
+    },
+    "ru": {
+      "name": "Насмешки",
+      "description": "Для ваших врагов ваше присутствие в бою - это как красный флаг для быка. Вы не только отвлекаете их от основных целей, но и направляете их гнев себе на пользу. Используйте /use_tnt, чтобы активировать.",
+      "explanation": "Развитие этого навыка увеличивает зону поражения и шанс на успех."
+    },
+    "es": null
+  },
+  {
+    "code": "ens",
+    "en": {
+      "name": "Enduring Shieldbearer",
+      "description": "You are a true born protector. Doing what you love inspires and excites you.",
+      "explanation": "Advancing this skill increases chance to regenerate stamina during the defence. Increases chance to regenerate stamina during attack with half of the efficiency. Increases chance to regenerate additional stamina in a tough battle."
+    },
+    "ru": {
+      "name": "Стойкий щитоносец",
+      "description": "Вы - прирожденный защитник. Занятие любимым делом вдохновляет и волнует вас.",
+      "explanation": "Развитие этого навыка увеличивает шанс регенерации выносливости во время защиты. Увеличивает шанс восстановления выносливости во время атаки с половиной эффективности. Увеличивает шанс восстановить дополнительную выносливость в тяжелом бою."
+    },
+    "es": null
+  },
+  {
+    "code": "glt",
+    "en": {
+      "name": "All That Glitters",
+      "description": "After successful defence, you are able to find extra gold lying on the ground.",
+      "explanation": "Advancing this skill increases the gold you obtain on the battlefield in a successful defence."
+    },
+    "ru": {
+      "name": "Все, что блестит",
+      "description": "После успешной защиты вы сможете найти дополнительное золото, лежащее на земле.",
+      "explanation": "Развитие навыка увеличивает количество золота, которое вы получаете на поле боя при успешной защите."
+    },
+    "es": null
+  },
+  {
+    "code": "hm",
+    "en": {
+      "name": "Heavy Armor Mastery",
+      "description": "Experience and training grant you bonus stats while wearing a heavy armor.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение тяжелой броней",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, когда вы носите тяжелую броню.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  },
+  {
+    "code": "prt",
+    "en": {
+      "name": "Protector",
+      "description": "Being an honourable man, you look after your local villages, scouting for raiders.",
+      "explanation": "Advancing this skill increases the chance to meet a person pillaging a village. Activate /use_prt to delegate your duties to someone else for a while."
+    },
+    "ru": {
+      "name": "Покровитель",
+      "description": "Будучи благородным человеком, вы присматриваете за местными деревнями, выискивая, нет ли налетчиков.",
+      "explanation": "Развитие этого навыка увеличивает шанс встретить человека, грабящего деревню. Активируйте /use_prt чтобы временно делегировать свои обязанности кому-то другому."
+    },
+    "es": null
+  },
+  {
+    "code": "scv",
+    "en": {
+      "name": "Scavenger",
+      "description": "After a successful defence, you try to find something useful to take back home.",
+      "explanation": "Advancing this skill increases the chance to find an item on the battlefield."
+    },
+    "ru": {
+      "name": "Мусорщик",
+      "description": "После успешной защиты вы пытаетесь найти что-нибудь полезное, чтобы взять с собой домой.",
+      "explanation": "Развитие этого навыка увеличивает шанс найти предмет на поле боя."
+    },
+    "es": null
+  },
+  {
+    "code": "shd",
+    "en": {
+      "name": "Shield Mastery",
+      "description": "Experience and training grant you bonus stats while bearing a shield.",
+      "explanation": "Advancing this skill increases bonus granted to stats."
+    },
+    "ru": {
+      "name": "Владение щитом",
+      "description": "Тренировки и опыт делают своё дело, ваши способности повышаются, пока у вас в руках щит.",
+      "explanation": "Развитие навыка увеличивает ваши характеристики."
+    },
+    "es": null
+  }
+]
