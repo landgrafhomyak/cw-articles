@@ -29,7 +29,8 @@ jobs:
         uses: actions/checkout@v3
       - name: Build /upd/20230214
         run: |
-          ./upd/20230214/build.sh
+          cd ./upd/20230214/
+          ./build.sh
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
