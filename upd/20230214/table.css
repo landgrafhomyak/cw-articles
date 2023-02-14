@@ -26,6 +26,10 @@ table#skills-table > tbody > tr.header > td.name {
     font-weight: bold;
 }
 
+table#skills-table > tbody > tr.header > td.name > span.unselected {
+    display: none;
+}
+
 table#skills-table > tbody > tr.header > td.lang-button {
     background-color: #aff;
     color: #005;

@@ -19,6 +19,10 @@ function collapse(code, elem) {
 }
 
 function change_lang(code, id, elem) {
+    elem.parentElement.children[1].children[0].classList.add("unselected")
+    elem.parentElement.children[1].children[1].classList.add("unselected")
+    elem.parentElement.children[1].children[2].classList.add("unselected")
+    elem.parentElement.children[1].children[id].classList.remove("unselected")
     elem.parentElement.children[2].classList.remove("selected")
     elem.parentElement.children[3].classList.remove("selected")
     elem.parentElement.children[4].classList.remove("selected")

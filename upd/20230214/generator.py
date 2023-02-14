@@ -12,7 +12,16 @@ for mls in data:
 
     tbody += "<tr class='header'>"
     tbody += "<td class='code' onclick='expand(\"" + code + "\", this)'>" + code + "</td>"
-    tbody += "<td class='name' onclick='expand(\"" + code + "\", this)'>" + en["name"] + "</td>"
+    tbody += "<td class='name' onclick='expand(\"" + code + "\", this)'>"
+    tbody += "<span>" + en["name"] + "</span>"
+    if ru is not None:
+        tbody += "<span class='unselected'>" + ru["name"] + "</span>"
+    else:
+        tbody += "<span></span>"
+    if es is not None:
+        tbody += "<span class='unselected'>" + es["name"] + "</span>"
+    else:
+        tbody += "<span></span>"
     tbody += "<td class='lang-button selected' onclick='change_lang(\"" + code + "\", 0, this)'>en</td>"
     if ru is not None:
         tbody += "<td class='lang-button' onclick='change_lang(\"" + code + "\", 1, this)'>ru</td>"
