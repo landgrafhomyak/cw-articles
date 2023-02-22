@@ -1117,5 +1117,19 @@
       "explanation": "Развитие навыка увеличивает ваши характеристики."
     },
     "es": null
+  },
+  {
+    "code": "cry",
+    "en": {
+      "name": "Battle cry",
+      "description": "Maybe you are not the best singer, but you can yell loud enough to inspire allies on the battlefield.\nYou can /use_cry to activate.",
+      "explanation": "Advancing this skill increases the chance of success and the audience covered."
+    },
+    "ru": {
+      "name": "Боевой клич",
+      "description": "Возможно, вы не самый лучший певец, но вы можете кричать достаточно громко, чтобы вдохновить союзников на поле боя.\nИспользуйте /use_cry для активации.",
+      "explanation": "Развитие навыка повышает шансы на успех и увеличивает охват аудитории."
+    },
+    "es": null
   }
 ]
